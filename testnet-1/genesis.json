@@ -37,7 +37,29 @@
           "pub_key": null,
           "account_number": "0",
           "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "did:fury:1hgg8ppfu0fpyd69htsetcflq6fgwvphwld4cve",
+          "pub_key": null,
+          "account_number": "0",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "did:fury:13x65unyfq4l6stp2a5wevxkjrl7j6zjpahyg83",
+          "pub_key": null,
+          "account_number": "0",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "did:fury:1mmfw5m99a8n8tfhet0hp36sae8sd9hnnt4eg68",
+          "pub_key": null,
+          "account_number": "0",
+          "sequence": "0"
         }
+        
       ]
     },
     "authz": {
@@ -54,7 +76,34 @@
           "coins": [
             {
               "denom": "ufury",
-              "amount": "420000000000000"
+              "amount": "294465020000"
+            }
+          ]
+        },
+        {
+          "address": "did:fury:1hgg8ppfu0fpyd69htsetcflq6fgwvphwld4cve",
+          "coins": [
+            {
+              "denom": "ufury",
+              "amount": "110537820000"
+            }
+          ]
+        },
+        {
+          "address": "did:fury:13x65unyfq4l6stp2a5wevxkjrl7j6zjpahyg83",
+          "coins": [
+            {
+              "denom": "ufury",
+              "amount": "159732060000"
+            }
+          ]
+        },
+        {
+          "address": "did:fury:1mmfw5m99a8n8tfhet0hp36sae8sd9hnnt4eg68",
+          "coins": [
+            {
+              "denom": "ufury",
+              "amount": "238436670000"
             }
           ]
         }
@@ -190,6 +239,189 @@
         }
       ]
     },
+	{
+	"body": {
+		"messages": [
+			{
+				"@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+				"description": {
+					"moniker": "fanfury-t2",
+					"identity": "",
+					"website": "",
+					"security_contact": "",
+					"details": ""
+				},
+				"commission": {
+					"rate": "0.100000000000000000",
+					"max_rate": "0.200000000000000000",
+					"max_change_rate": "0.010000000000000000"
+				},
+				"min_self_delegation": "1",
+				"delegator_address": "did:fury:13x65unyfq4l6stp2a5wevxkjrl7j6zjpahyg83",
+				"validator_address": "did:fury:valoper13x65unyfq4l6stp2a5wevxkjrl7j6zjp5ne3c6",
+				"pubkey": {
+					"@type": "/cosmos.crypto.ed25519.PubKey",
+					"key": "toSuB7HKFb1faoIV5GS9gobtKa8zOShZzvgXZH3TMpA="
+				},
+				"value": {
+					"denom": "ufury",
+					"amount": "42000000000"
+				}
+			}
+		],
+		"memo": "0153ce57c2be305b49788c73ed9a9322594866e4@10.160.0.8:26656",
+		"timeout_height": "0",
+		"extension_options": [],
+		"non_critical_extension_options": []
+	},
+	"auth_info": {
+		"signer_infos": [
+			{
+				"public_key": {
+					"@type": "/cosmos.crypto.secp256k1.PubKey",
+					"key": "AnbmoOf/Bi2W9dgoagP1MfheuEMl5KMbeKPzSFRaZIFc"
+				},
+				"mode_info": {
+					"single": {
+						"mode": "SIGN_MODE_DIRECT"
+					}
+				},
+				"sequence": "0"
+			}
+		],
+		"fee": {
+			"amount": [],
+			"gas_limit": "200000",
+			"payer": "",
+			"granter": ""
+		}
+	},
+	"signatures": [
+		"hubq7QWLpExyzpYXiVmOu4Pdj913vwJYJGldgWiLh28/0yWTR4bZPy9NqrERt5+XitKJ4F1NJxVvR2NO09thEw=="
+	]
+   },
+   {
+	"body": {
+		"messages": [
+			{
+				"@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+				"description": {
+					"moniker": "fanfury-furya-1",
+					"identity": "",
+					"website": "",
+					"security_contact": "",
+					"details": ""
+				},
+				"commission": {
+					"rate": "0.100000000000000000",
+					"max_rate": "0.200000000000000000",
+					"max_change_rate": "0.010000000000000000"
+				},
+				"min_self_delegation": "1",
+				"delegator_address": "did:fury:1hgg8ppfu0fpyd69htsetcflq6fgwvphwld4cve",
+				"validator_address": "did:fury:valoper1hgg8ppfu0fpyd69htsetcflq6fgwvphwkfgpnj",
+				"pubkey": {
+					"@type": "/cosmos.crypto.ed25519.PubKey",
+					"key": "+HaRYDe178+JRPPdLfV6FPqA4slsG6kF7Ls2o/dN6nY="
+				},
+				"value": {
+					"denom": "ufury",
+					"amount": "420000000"
+				}
+			}
+		],
+		"memo": "06918ee6ee124639139a29748358932fce61743d@10.160.0.7:26656",
+		"timeout_height": "0",
+		"extension_options": [],
+		"non_critical_extension_options": []
+	},
+	"auth_info": {
+		"signer_infos": [
+			{
+				"public_key": {
+					"@type": "/cosmos.crypto.secp256k1.PubKey",
+					"key": "A5A7p/EOC+yHFqPcnf8ZB3uTXoF16AqpnFv3vOQ5kHBQ"
+				},
+				"mode_info": {
+					"single": {
+						"mode": "SIGN_MODE_DIRECT"
+					}
+				},
+				"sequence": "0"
+			}
+		],
+		"fee": {
+			"amount": [],
+			"gas_limit": "200000",
+			"payer": "",
+			"granter": ""
+		}
+	},
+	"signatures": [
+		"wwW6BPfxvRb4xT759W0hxZUycsOvAZq2yJv62qiS9+QykBU2CSLemMjhe6YHF6TW7FNvqvWooDj0dCZ1cDLgJQ=="
+	]
+  },
+  {
+	"body": {
+		"messages": [
+			{
+				"@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+				"description": {
+					"moniker": "fanfury-grid-1",
+					"identity": "",
+					"website": "",
+					"security_contact": "",
+					"details": ""
+				},
+				"commission": {
+					"rate": "0.100000000000000000",
+					"max_rate": "0.200000000000000000",
+					"max_change_rate": "0.010000000000000000"
+				},
+				"min_self_delegation": "1",
+				"delegator_address": "did:fury:1mmfw5m99a8n8tfhet0hp36sae8sd9hnnt4eg68",
+				"validator_address": "did:fury:valoper1mmfw5m99a8n8tfhet0hp36sae8sd9hnnz3y39v",
+				"pubkey": {
+					"@type": "/cosmos.crypto.ed25519.PubKey",
+					"key": "o9GHmH2istwYez3PsYrGan+dHUF59GIcVvTxYrWDOxw="
+				},
+				"value": {
+					"denom": "ufury",
+					"amount": "420000000"
+				}
+			}
+		],
+		"memo": "b62bb8725cb6c898fd9f19d5ee94ca9a18896bbb@10.160.0.5:26656",
+		"timeout_height": "0",
+		"extension_options": [],
+		"non_critical_extension_options": []
+	},
+	"auth_info": {
+		"signer_infos": [
+			{
+				"public_key": {
+					"@type": "/cosmos.crypto.secp256k1.PubKey",
+					"key": "A4OA6K9PePNhmeda9SrHSpQyBukAKjJs4lYJnOXVj52o"
+				},
+				"mode_info": {
+					"single": {
+						"mode": "SIGN_MODE_DIRECT"
+					}
+				},
+				"sequence": "0"
+			}
+		],
+		"fee": {
+			"amount": [],
+			"gas_limit": "200000",
+			"payer": "",
+			"granter": ""
+		}
+	},
+	"signatures": [
+		"OO4g8rPfeeBe5zLF+rSo0QHp7L6ovUqsZRsswBHWIvw23sbmDwFS2ROxue08y9GBsxYT96FBUiu6/SZ1eSST3w=="
+	]
+  },
     "gov": {
       "starting_proposal_id": "1",
       "deposits": [],
